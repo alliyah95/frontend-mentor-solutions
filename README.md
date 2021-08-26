@@ -1,5 +1,5 @@
 # Frontend Mentor Solutions
-
+<p> My solutions for some of [Frontend Mentor's] (www.frontendmentor.io/) challenges. </p><br>
 ### Order Summary Component
 <https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj>
 <br>
