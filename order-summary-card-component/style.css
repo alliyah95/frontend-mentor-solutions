@@ -4,7 +4,7 @@
     font-family: 'Red Hat Display', sans-serif;
 }
 html {
-    font-size: 10px;
+    font-size: 62.5%;
 }
 body {
     background-color:#E0E8FF;
@@ -24,81 +24,81 @@ h4 {
 .card {
     background-color: #FFFFFF;
     border-radius: 2rem;
-    height: 550px;
-    margin: 100px auto;
+    height: 55rem;
+    margin: 10rem auto;
     transition: 300ms ease-in-out;
-    width: 350px;
+    width: 35rem;
     
 }
 .card:hover{
-    box-shadow: 8px 8px 5px #cad1e6;
+    box-shadow: 0.8rem 0.8rem 0.5rem #cad1e6;
     transform: scale(1.15);
     transition: 0.5s ease;
 }
-.person-img {
+.card__person-img {
     border-radius: inherit;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     width: inherit;
 }
-.summary {
-    margin-top: 30px;
+.card__summary {
+    margin-top: 3rem;
     text-align: center;
 }
-.summary-description{
+.summary--description{
     color:#231f20cc;
     font-size: 1.5rem;
     line-height: 1.4;
-    padding: 20px 30px 15px 30px;
+    padding: 2rem 3rem 1.5rem 3rem;
 }
 
-.annual-plan{
+.card__plan{
     background-color: #F8F9FE;
-    border-radius: 6px;
+    border-radius: 0.6rem;
     color: #231F20;
-    height: 70px;
-    margin: 5px 35px;
+    height: 7rem;
+    margin: 0.5rem 3.5rem;
     position: relative;
 }
-.music-icon {
+.plan--music-icon {
     float: left;
-    left: 22px;
-    top: 18px;
+    left: 2.2rem;
+    top: 1.8rem;
     position: relative;
     width: 12%;
 }
-.plan-desc {
-    left: 75px;
+.plan--description {
+    left: 7.5rem;
     position: absolute;
-    top: 16px;
+    top: 1.6rem;
 }
-.price {
+.plan--price {
     color:#231f20cc;
     font-size: 1.44rem;
 }
-.change:hover{
+.plan--change:hover{
     color:#766CF1;
     text-decoration: none;
 }
-.change {
+.plan--change {
     color: #382AE1;
     font-size: 1.28rem;
-    left: 130px;
+    left: 13rem;
     position: absolute;
-    bottom: 12px;
+    bottom: 1.2rem;
 }
 .proceed-button {
     background-color: #382AE1;
-    border-radius: 6px;
-    box-shadow: 8px 8px 12px #DDDAF7;
+    border-radius: 0.6rem;
+    box-shadow: 0.8rem 0.8rem 1.2rem #DDDAF7;
     color:#F8F9FE;
     font-size: 1.28rem;
-    left: 35px;
-    padding: 7px 81px;
+    left: 3.5rem;
+    padding: 0.7rem 8.1rem;
     position: relative;
     text-decoration: none;
-    top: 20px;
+    top: 2rem;
    
 }
 .proceed-button:hover{
@@ -107,12 +107,12 @@ h4 {
 .cancel-button {
     color:#231F20;
     font-size: 1.28rem;
-    left: 36px;
-    padding: 7px 100px;
+    left: 3.6rem;
+    padding: 0.7rem 10rem;
     position: relative;
     text-decoration: none;
-    top: 35px;
+    top: 3.5rem;
 }
-.cancel-button:hover{
+.cancel-button  :hover{
     color:#231f20cc;;
 }
