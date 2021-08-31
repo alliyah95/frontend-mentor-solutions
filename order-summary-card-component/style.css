@@ -3,16 +3,19 @@
     padding: 0;
     font-family: 'Red Hat Display', sans-serif;
 }
+html {
+    font-size: 10px;
+}
 body {
     background-color:#E0E8FF;
 }
 h1 {
     color: #231F20;
-    font-size: 1.4rem;
+    font-size: 2.24rem;
     font-weight: 900;
 }
 h4 {
-    font-size: 0.90rem;
+    font-size: 1.44rem;
 }
 .main-div {
     margin: auto 0;
@@ -20,7 +23,7 @@ h4 {
 }
 .card {
     background-color: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 2rem;
     height: 550px;
     margin: 100px auto;
     transition: 300ms ease-in-out;
@@ -45,7 +48,7 @@ h4 {
 }
 .summary-description{
     color:#231f20cc;
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 1.4;
     padding: 20px 30px 15px 30px;
 }
@@ -72,7 +75,7 @@ h4 {
 }
 .price {
     color:#231f20cc;
-    font-size: 0.90rem;
+    font-size: 1.44rem;
 }
 .change:hover{
     color:#766CF1;
@@ -80,7 +83,7 @@ h4 {
 }
 .change {
     color: #382AE1;
-    font-size: 0.80rem;
+    font-size: 1.28rem;
     left: 130px;
     position: absolute;
     bottom: 12px;
@@ -90,7 +93,7 @@ h4 {
     border-radius: 6px;
     box-shadow: 8px 8px 12px #DDDAF7;
     color:#F8F9FE;
-    font-size: 0.80rem;
+    font-size: 1.28rem;
     left: 35px;
     padding: 7px 81px;
     position: relative;
@@ -103,7 +106,7 @@ h4 {
 }
 .cancel-button {
     color:#231F20;
-    font-size: 0.80rem;
+    font-size: 1.28rem;
     left: 36px;
     padding: 7px 100px;
     position: relative;
