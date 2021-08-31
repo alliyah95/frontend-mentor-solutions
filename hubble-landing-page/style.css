@@ -1,76 +1,118 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
 }
-@media (min-width:375px) {
-    body {
-        background-image: url("images/bg-mobile.svg");
-    }
-}
-@media (min-width:1440px) {
-    body {
-        background-image: url("images/bg-desktop.svg");
-    }
+html {
+    font-size: 62.5%;
 }
 body {
-    background-color: #674BB1;
-    color: #FFFFFF;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-}
-footer {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
+    background-color:#E0E8FF;
 }
 h1 {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.5;
-    padding-top: 50px;
+    color: #231F20;
+    font-size: 2.24rem;
+    font-weight: 900;
 }
-.attrib-btn:hover{
-    text-decoration: none;
-    color:#FFFFFF
+h4 {
+    font-size: 1.44rem;
 }
-.attrib-btn:visited{
-    color: #FFFFFF;
+.main-div {
+    margin: auto 0;
+    padding: 0;
 }
-.attrib-btn:active{
-    color:#4a3683
-}
-.main {
-    display: flex;
-    justify-content: center;
-}
-.brand-logo {
-    margin: 40px 40px 30px;
-}
-.description {
-    flex-basis: 35%;
-    padding:20px;
-}
-.illustration {
-    flex-basis: 50%;
-    padding:20px;
-}
-.register-button {
+.card {
     background-color: #FFFFFF;
-    border-radius: 30px;
-    color:#674BB1;
-    box-shadow: 2px 8px 24px #3d3b3bc5;
-    display:inline-flex;
-    margin-top: 30px;
-    padding: 20px 60px;
+    border-radius: 2rem;
+    height: 55rem;
+    margin: 10rem auto;
+    transition: 300ms ease-in-out;
+    width: 35rem;
+    
+}
+.card:hover{
+    box-shadow: 0.8rem 0.8rem 0.5rem #cad1e6;
+    transform: scale(1.15);
+    transition: 0.5s ease;
+}
+.person-img {
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 1rem;
+    width: inherit;
+}
+.summary {
+    margin-top: 3rem;
+    text-align: center;
+}
+.summary-description{
+    color:#231f20cc;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    padding: 2rem 3rem 1.5rem 3rem;
+}
+
+.annual-plan{
+    background-color: #F8F9FE;
+    border-radius: 0.6rem;
+    color: #231F20;
+    height: 7rem;
+    margin: 0.5rem 3.5rem;
+    position: relative;
+}
+.music-icon {
+    float: left;
+    left: 2.2rem;
+    top: 1.8rem;
+    position: relative;
+    width: 12%;
+}
+.plan-desc {
+    left: 7.5rem;
+    position: absolute;
+    top: 1.6rem;
+}
+.price {
+    color:#231f20cc;
+    font-size: 1.44rem;
+}
+.change:hover{
+    color:#766CF1;
     text-decoration: none;
 }
-.register-button:hover {
-    background-color: #E980E7;
-    color:#FFFFFF;
+.change {
+    color: #382AE1;
+    font-size: 1.28rem;
+    left: 13rem;
+    position: absolute;
+    bottom: 1.2rem;
 }
-.text-description {
-    line-height: 1.75;
-    padding-top: 20px;
+.proceed-button {
+    background-color: #382AE1;
+    border-radius: 0.6rem;
+    box-shadow: 0.8rem 0.8rem 1.2rem #DDDAF7;
+    color:#F8F9FE;
+    font-size: 1.28rem;
+    left: 3.5rem;
+    padding: 0.7rem 8.1rem;
+    position: relative;
+    text-decoration: none;
+    top: 2rem;
+   
+}
+.proceed-button:hover{
+    background-color:#766CF1;
+}
+.cancel-button {
+    color:#231F20;
+    font-size: 1.28rem;
+    left: 3.6rem;
+    padding: 0.7rem 10rem;
+    position: relative;
+    text-decoration: none;
+    top: 3.5rem;
+}
+.cancel-button:hover{
+    color:#231f20cc;;
 }
