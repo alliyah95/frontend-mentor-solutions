@@ -1,0 +1,30 @@
+.plan {
+    &--music-icon {
+        float: left;
+        left: 2.2rem;
+        top: 1.8rem;
+        position: relative;
+        width: 12%;
+    }
+    &--description {
+        left: 7.5rem;
+        position: absolute;
+        top: 1.6rem;
+    }
+    &--price {
+        color:$hover-gray;
+        font-size: 1.44rem;
+    }
+    &--change:hover{
+        color:$purple;
+        text-decoration: none;
+    }
+    &--change {
+        color: $dark-purple;
+        font-size: 1.28rem;
+        left: 13rem;
+        position: absolute;
+        bottom: 1.2rem;
+    }
+    
+}
