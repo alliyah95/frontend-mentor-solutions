@@ -1,0 +1,41 @@
+.card {
+
+    background-color: $color-white;
+    border-radius: 2rem;
+    height: 55rem;
+    margin: 10rem auto;
+    transition: 300ms ease-in-out;
+    width: 35rem;
+    
+    &:hover{
+        box-shadow: 0.8rem 0.8rem 0.5rem darken($color-white, 10%);
+        transform: scale(1.15);
+        transition: 0.5s ease;
+    }
+    &__plan{
+        background-color: $color-white;
+        border-radius: 0.6rem;
+        color: $main-text-color;
+        height: 7rem;
+        margin: 0.5rem 3.5rem;
+        position: relative;
+    }
+    &__person-img {
+        border-radius: inherit;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-bottom: 1rem;
+        width: inherit;
+    }
+    &__summary {
+        margin-top: 3rem;
+        text-align: center;
+
+        &--description{
+            color:$hover-gray;
+            font-size: 1.5rem;
+            line-height: 1.4;
+            padding: 2rem 3rem 1.5rem 3rem;
+        }
+    }
+}
