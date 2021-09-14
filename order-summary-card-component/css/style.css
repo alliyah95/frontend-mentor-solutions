@@ -1,108 +1,102 @@
-* {
+*, *::after, *::before {
   margin: 0;
   padding: 0;
-  font-family: 'Red Hat Display', sans-serif; }
+  box-sizing: inherit; }
 
 html {
   font-size: 62.5%; }
 
 body {
-  background-color: #dfddfa; }
-
-.main-div {
-  margin: auto 0;
-  padding: 0; }
-
-h1 {
-  color: #231F20;
-  font-size: 2.24rem;
-  font-weight: 900; }
-
-h4 {
-  font-size: 1.44rem; }
-
-.cancel-button {
-  color: #231F20;
-  font-size: 1.28rem;
-  left: 3.6rem;
-  padding: 0.7rem 10rem;
-  position: relative;
-  text-decoration: none;
-  top: 3.5rem; }
-
-.cancel-button :hover {
-  color: #231f20b2; }
-
-.proceed-button {
-  background-color: #382AE1;
-  border-radius: 0.6rem;
-  box-shadow: 0.8rem 0.8rem 1.2rem #e6e6e6;
-  color: #fff;
-  font-size: 1.28rem;
-  left: 3.5rem;
-  padding: 0.7rem 8.1rem;
-  position: relative;
-  text-decoration: none;
-  top: 2rem; }
-  .proceed-button:hover {
-    background-color: #766CF1; }
+  box-sizing: border-box;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #E0E8FF; }
 
 .card {
-  background-color: #fff;
-  border-radius: 2rem;
+  background-color: #FFFFFF;
+  border-radius: 1.5rem;
   height: 55rem;
   margin: 10rem auto;
   transition: 300ms ease-in-out;
-  width: 35rem; }
-  .card:hover {
-    box-shadow: 0.8rem 0.8rem 0.5rem #e6e6e6;
-    transform: scale(1.15);
-    transition: 0.5s ease; }
-  .card__plan {
-    background-color: #fff;
-    border-radius: 0.6rem;
-    color: #231F20;
-    height: 7rem;
-    margin: 0.5rem 3.5rem;
-    position: relative; }
-  .card__person-img {
-    border-radius: inherit;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    margin-bottom: 1rem;
-    width: inherit; }
-  .card__summary {
-    margin-top: 3rem;
-    text-align: center; }
-    .card__summary--description {
-      color: #231f20b2;
-      font-size: 1.5rem;
-      line-height: 1.4;
-      padding: 2rem 3rem 1.5rem 3rem; }
-
-.plan--music-icon {
-  float: left;
-  left: 2.2rem;
-  top: 1.8rem;
+  width: 37rem;
   position: relative;
-  width: 12%; }
+  transition: all .3s;
+  box-shadow: 0 0.8rem 2.5rem rgba(0, 0, 0, 0.15);
+  font-family: 'Red Hat Display', sans-serif; }
+  .card__pic {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    background-size: cover;
+    height: 18rem;
+    background-image: url("../images/illustration-hero.svg"); }
+  .card__description {
+    text-align: center; }
+    .card__description--title {
+      margin: 3.5rem auto 1.5rem;
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: #1F2F56; }
+    .card__description--text {
+      font-size: 1.4rem;
+      color: #7280A7;
+      padding: 0 4rem;
+      line-height: 1.6; }
+  .card__plan {
+    margin: 2rem auto 2.5rem;
+    background-color: #F8F9FE;
+    position: relative;
+    border-radius: 1rem;
+    width: 80%;
+    height: 14%; }
+    .card__plan--icon {
+      position: absolute;
+      margin: 1.5rem;
+      display: inline-block; }
+    .card__plan--description {
+      width: 60%; }
+      .card__plan--description-title {
+        color: #1F2F56;
+        position: absolute;
+        top: 30%;
+        left: 28%; }
+      .card__plan--description-text {
+        position: absolute;
+        color: #7280A7;
+        top: 55%;
+        left: 28%; }
+      .card__plan--description-change-btn {
+        position: absolute;
+        color: #382AE1;
+        font-weight: 900;
+        left: 80%;
+        top: 50%; }
+        .card__plan--description-change-btn:hover {
+          text-decoration: none;
+          color: #766CF1; }
+  .card__buttons {
+    position: relative;
+    font-size: 1.2rem;
+    margin: 2rem auto;
+    width: 100%;
+    text-align: center; }
+  .card:hover {
+    transform: scale(1.05); }
 
-.plan--description {
-  left: 7.5rem;
-  position: absolute;
-  top: 1.6rem; }
-
-.plan--price {
-  color: #231f20b2;
-  font-size: 1.44rem; }
-
-.plan--change:hover {
-  color: #766CF1;
-  text-decoration: none; }
-
-.plan--change {
-  color: #382AE1;
-  font-size: 1.28rem;
-  left: 13rem;
-  position: absolute;
-  bottom: 1.2rem; }
+.btn {
+  border-radius: .7rem;
+  font-weight: 900;
+  color: #7280A7;
+  width: 80%;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  margin: auto;
+  display: inline-block; }
+  .btn--colored {
+    background-color: #382AE1;
+    color: #FFFFFF;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+    .btn--colored:hover {
+      background-color: #766CF1; }
+  .btn--plain:hover {
+    color: #1F2F56; }
