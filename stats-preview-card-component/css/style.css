@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #090B1A; }
+
+.primary-header {
+  font-family: 'Inter', sans-serif;
+  font-size: 3.5rem; }
+
+.row {
+  margin: 0 auto; }
+
+.section-stats {
+  padding: 15rem 0; }
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(9, 11, 26, 0.2);
+  height: 45rem;
+  margin: auto 15rem;
+  position: relative;
+  overflow: hidden; }
+  .card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: table; }
+  .card__img {
+    display: inline-block;
+    width: 100%; }
+  .card__left {
+    padding: 0 4rem 0 4.5rem;
+    width: 50%;
+    display: table-cell; }
+  .card__right {
+    width: 50%;
+    display: table-cell; }
+  .card__text {
+    font-family: 'Lexend Deca', sans-serif; }
+  .card__numstats {
+    font-family: 'Inter', sans-serif; }
