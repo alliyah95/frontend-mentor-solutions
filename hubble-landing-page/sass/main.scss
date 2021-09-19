@@ -1,1 +1,240 @@
+$violet: #674BAF;
+$soft-magenta: #E882E8;
+$white: #FFF;
+$black: #000;
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-color: #674BB1;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6 rem;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+.logo-pic {
+    width: 15rem;
+}
+
+.btn {
+    &,
+    &:link,
+    &:visited {
+        background-color: $white;
+        text-decoration: none;
+        border-radius: 4rem;
+        padding: 1.1rem 8rem;
+        font-size: 1.6rem;
+        color: $violet;
+        box-shadow: 0 1rem 2rem rgba($black,.2);
+    }
+
+    &:hover,
+    &:active {
+        background-color: $soft-magenta;
+        color: $white;
+    }
+}
+
+.heading {
+    margin-bottom: 1.8rem;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.social-media {
+    &__icon {
+        &,
+        &:link,
+        &:visited {
+            border-radius: 50%;
+            font-size: 1.6rem;
+            color: $white;
+            width: 3rem;
+            height: 3rem;
+            padding: 0.7rem;
+            margin: 0.5rem;
+            border: 1px solid $white;
+            font-weight: lighter;
+        }
+
+        &:hover,
+        &:active {
+            color: $soft-magenta;
+            border: 1px solid $soft-magenta;
+        }
+    }
+}
+
+.container {
+    display: flex;
+}
+
+.content {
+    display: flex;
+}
+
+.attribution {
+    font-size: 1.5rem;
+    
+    &__anchor {
+        font-weight: bolder;
+        &,
+        &:visited,
+        &:link {
+            text-decoration: none;
+            color: white;
+        }
+    
+        &:hover,
+        &:active {
+            color: $soft-magenta;
+       }
+    }
+}
+
+@media screen and (min-width: 320px) {
+    body {
+        background-image: url("../images/bg-mobile.svg");
+    }
+    .brand-logo {
+        padding: 3.5rem 3rem 5rem;
+    }
+    
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .illustration {
+        width: 80%;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+
+        &__pic {
+            padding-bottom: 5rem;
+        }
+
+        &__description {
+            padding: 0 4.5rem;
+        }
+
+        &__button {
+            margin: 4rem;
+        }
+    }
+
+    .btn {
+        font-size: 1.4rem;
+    }
+
+    .social-media {
+        margin: 2.8rem 0 0.5rem;
+    }
+
+    .attribution {
+        text-align: center;
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+
+        &__paragraph {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 420px) {
+    body {
+        background-image: url("../images/bg-mobile.svg");
+        background-size: 100% auto;
+    }
+}
+
+@media screen and (min-width: 1380px) {
+    body {
+        background-image: url("../images/bg-desktop.svg");
+        background-size: cover;
+    }
+    
+    .brand-logo {
+        padding: 3.5rem 7rem 5rem;
+    }
+
+    .heading {
+        font-size: 4rem;
+        padding-right: 5rem;
+        padding-top: 5rem;
+    }
+
+    .container {
+        padding: 0 7rem; 
+    }
+
+    .illustration {
+        width: 100%;
+    }
+
+    .content {
+        flex-direction: row;
+
+        &__pic {
+            justify-items: center;
+            width: 50%;
+            padding-bottom: 5rem;
+        }
+
+        &__description {
+            text-align: left;
+            width: 50%;
+        }
+
+        &__button {
+           margin: 4rem 0;
+        }
+    }
+
+    .paragraph {
+        font-size: 1.7rem;
+        margin-right: 0;
+    }
+
+    .attribution {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: end;
+        align-items: center;
+        padding-right: 13rem;
+
+        &__paragraph {
+            margin-right: 1rem;
+            padding: 0;
+        }
+    }
+
+    .social-media {
+        margin: 0;
+    }
+}
