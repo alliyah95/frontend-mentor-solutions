@@ -1,35 +1,41 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
   }
   html {
     font-size: 62.5%;
   }
   body {
-    box-sizing: border-box;
-    background-image: url("../images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #E0E8FF;
+    font-family: 'Red Hat Display', sans-serif;
   }
-  
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .card {
-    background-color: #FFFFFF;
+    background-color:#FFFFFF;
     border-radius: 1.5rem;
     height: 55rem;
-    margin: 10rem auto;
+    margin: 6rem auto 3rem;
     transition: 300ms ease-in-out;
     width: 37rem;
     position: relative;
     transition: all .3s;
     box-shadow: 0 0.8rem 2.5rem rgba(#000, 0.15);
-    font-family: 'Red Hat Display', sans-serif;
 
     &__pic {
         border-top-left-radius: inherit;
         border-top-right-radius: inherit;
         background-size: cover;
+        background-position: center;
         height: 18rem;
         background-image: url("../images/illustration-hero.svg");
     }
@@ -136,6 +142,82 @@
         }
 }
 
-.section-summary {
+.attribution {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
 
+    &__anchor {
+        font-weight: bolder;
+        &,
+        &:visited,
+        &:link {
+            text-decoration: none;
+            color: #1F2F56;
+        }
+        
+        &:hover,
+        &:active {
+            color: #382AE1;
+       }
+    }
 }
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-image: url("../images/pattern-background-desktop.svg");
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url("../images/pattern-background-mobile.svg");
+    }
+    .card {
+        width: 30rem;
+    }    
+}
+
+@media only screen and (max-width: 376px) {
+    .card{
+        width: 28rem;
+        height: 51rem;
+
+        &__description {
+
+            &--title {
+                font-size: 1.5rem;
+            }
+    
+            &--text {
+                font-size: 1.1rem;
+            }
+        }
+    
+        &__plan {
+    
+            &--description {
+                width: 50%;
+            
+                &-title {
+                    font-size: 1.2rem;
+                    top:32%;
+                    left: 30%;
+                }
+                &-text {
+                    font-size: 0.9rem;
+                    top:55%;
+                    left: 30%;
+                }
+                &-change-btn {
+                    left: 75%;
+                    top:45%;
+                }
+            }
+        }  
+    }
+
+    .attribution {
+        font-size: 1rem;
+    }
+}  
