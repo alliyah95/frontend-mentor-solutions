@@ -175,6 +175,12 @@
     }
     .card {
         width: 30rem;
+
+        &__description {
+            &--text {
+                padding: 0 3rem;
+            }
+        }
     }    
 }
 
@@ -205,7 +211,7 @@
                     left: 30%;
                 }
                 &-text {
-                    font-size: 0.9rem;
+                    font-size: 1rem;
                     top:55%;
                     left: 30%;
                 }
