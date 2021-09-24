@@ -1,7 +1,7 @@
-# [Frontend Mentor Solutions ➜](https://youthful-ramanujan-f72f80.netlify.app)  
+# [Frontend Mentor Solutions ➜] 
 My solutions for some of [Frontend Mentor's](www.frontendmentor.io/) challenges.<br>
 
-### Order Summary Component
+### [Order Summary Component ➜](https://youthful-ramanujan-f72f80.netlify.app)
 <https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj>
 <br>
 ### Huddle landing page with a single introductory section
